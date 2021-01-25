@@ -11,9 +11,9 @@
 
 <?php
 
-use Users\User;
+use Users\Student;
 
-$user1 = new User("Jolita", "jolita@gmail.com", "mokinys");
+$user1 = new Student("Jolita", "jolita@gmail.com", "mokinys", 8);
 $user1->addDescription("labai gera")
 
 ?>

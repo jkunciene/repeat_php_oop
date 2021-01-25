@@ -3,10 +3,10 @@
 namespace Users;
 
 class User{
-    public $name;
-    public $email;
-    public $role;
-    public $decription;
+   protected $name;
+    protected $email;
+    protected $role;
+    protected $decription;
 
     public function __construct($name, $email, $role){
 
