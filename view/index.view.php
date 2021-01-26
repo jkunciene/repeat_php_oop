@@ -12,16 +12,13 @@
 <?php
 
 use Users\Student;
+use Users\Show;
 
 $user1 = new Student("Jolita", "jolita@gmail.com", "mokinys", 8);
-$user1->addDescription("labai gera")
+$user1->addDescription("labai gera");
 
+Show::ShowData($user1->showInfo());
 ?>
-<ul>
-    <?php foreach ($user1->showInfo() as $value): ?>
-        <li><?=$value; ?></li>
-    <?php endforeach;?>
 
-</ul>
 </body>
 </html>
